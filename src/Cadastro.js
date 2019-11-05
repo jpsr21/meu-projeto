@@ -39,7 +39,7 @@ class Cadastro extends Component {
     <br/>
     <div className="row">
       
-      <input type="submit" value="CADASTRAR" />
+      <input type="submit" className="enviar" value="CADASTRAR" />
     </div>
   </form>
 </div> 

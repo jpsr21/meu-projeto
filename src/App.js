@@ -32,7 +32,7 @@ class App extends Component {
     <br/>
     <div className="row">
       
-      <input type="submit" value="ENTRAR" />
+      <input type="submit" className="enviar" value="ENTRAR" />
     </div>
   </form>
   <Link to="/cadastro">Cadastrar-se</Link>
