@@ -10,6 +10,7 @@ module.exports = {
     }
 
     async store(req, res) {
+        
         //CRIAÇÃO
         const user = await User.create(req.body);
 
