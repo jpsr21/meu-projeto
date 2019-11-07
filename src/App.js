@@ -7,8 +7,10 @@ class App extends Component {
   render() {
     return (
       
-      
+    
+
       <div className="App">
+          {alert('Partes funcionando: \n\nCadastro, Criar postagem, Mostrar postagens (imagem e descrição) \n\n\nEm breve: Login, Editar postagem, Excluir postagem, Comentários')}
         <Login />
         
        
