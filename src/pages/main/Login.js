@@ -35,6 +35,8 @@ class Login extends Component {
     </div>
   </form>
   <Link to="/pages/main/Cadastro">Cadastrar-se</Link>
+  <br></br>
+  <Link to="/pages/main/Home">IR PARA HOME</Link>
 </div> 
     </div>
  );
