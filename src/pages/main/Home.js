@@ -5,9 +5,23 @@ import CriarPost from "./CriarPost.js";
 import CriarComentario from "./CriarComentario.js";
 import Opcoes from "./Opcoes.js";
 import '../../App.css';
+import axios from 'axios';
 
 //PAGINA HOME
 class Home extends Component {
+    state = {
+        selectedFile: null
+    }
+
+    fileSelectedHandler = event => {
+        this.setState({
+            selectedFile: event.target.files[0]
+        })
+    }
+
+    fileUploadHandler = () => {
+        axios.post('');
+    }
 
  render() {
  return (
@@ -15,7 +29,7 @@ class Home extends Component {
         <div className="barra">InstaClone
         {/* CRIAR POSTAGEM */}
         <Popup modal trigger={<i className="fas fa-camera fa-2x cam"></i>}>
-        {close => <CriarPost close={close} />}
+        {close => <CriarPost fileSelector={this.fileSelectedHandler.bind(this)} close={close} />}
        
       </Popup>
        
