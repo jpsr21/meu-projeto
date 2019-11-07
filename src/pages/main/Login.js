@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+import { Link } from 'react-router-dom';
+import '../../App.css';
 
-//TELA DE CADASTRO
-class Cadastro extends Component {
+//TELA DE LOGIN
+class Login extends Component {
  render() {
  return (
     <div className="App">
@@ -10,15 +11,6 @@ class Cadastro extends Component {
         
         <div className="container">
   <form action="">
-  <div className="row">
-      <div className="col-25">
-        <label>Nome:</label>
-      </div>
-      <div className="col-75">
-        <input type="text" id="nome" name="nome" placeholder="Nome" />
-    </div>
-    </div>
-    <br/>
     <div className="row">
       <div className="col-25">
         <label>Email:</label>
@@ -39,12 +31,13 @@ class Cadastro extends Component {
     <br/>
     <div className="row">
       
-      <input type="submit" className="enviar" value="CADASTRAR" />
+      <input type="submit" className="enviar" value="ENTRAR" />
     </div>
   </form>
+  <Link to="/pages/main/Cadastro">Cadastrar-se</Link>
 </div> 
     </div>
  );
  }
 }
-export default Cadastro;
+export default Login;

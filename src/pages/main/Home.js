@@ -4,11 +4,10 @@ import Popup from "reactjs-popup";
 import CriarPost from "./CriarPost.js";
 import CriarComentario from "./CriarComentario.js";
 import Opcoes from "./Opcoes.js";
-import './App.css';
+import '../../App.css';
 
 //PAGINA HOME
 class Home extends Component {
-   
 
  render() {
  return (
@@ -19,6 +18,7 @@ class Home extends Component {
         {close => <CriarPost close={close} />}
        
       </Popup>
+       
         
         </div>
                      
